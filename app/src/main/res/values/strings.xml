@@ -2,4 +2,7 @@
     <string name="app_name">TabianDating</string>
 
     <string name="first_time_user_message">Hello there first time user!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

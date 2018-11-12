@@ -3,6 +3,7 @@ package courses.pluralsight.com.tabiandating;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         isFirstLogin();
+        init();
+    }
+
+    private void init(){
+        HomeFragment homeFragment = new HomeFragment();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.main_content_frame,homeFragment,"Home");
+        transaction.commit();
     }
     
     private void isFirstLogin(){
