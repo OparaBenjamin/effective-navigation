@@ -1,4 +1,4 @@
-package courses.pluralsight.com.tabiandating;
+package courses.pluralsight.com.tabiandating.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
