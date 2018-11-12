@@ -1,8 +1,12 @@
 package courses.pluralsight.com.tabiandating;
 
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import courses.pluralsight.com.tabiandating.util.PreferenceKeys;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,5 +20,12 @@ public class MainActivity extends AppCompatActivity {
     
     private void isFirstLogin(){
         Log.d(TAG, "isFirstLogin: checking if first login");
+
+        final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        boolean isFirstLogin = sharedPreferences.getBoolean(PreferenceKeys.FIRST_TIME_LOGIN,true);
+
+        if (isFirstLogin){
+
+        }
     }
 }
