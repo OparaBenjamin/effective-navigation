@@ -26,6 +26,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         if (v.getId() == R.id.btn_login){
             startActivity(new Intent(LoginActivity.this,MainActivity.class));
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+            finish();
         }
     }
 }
