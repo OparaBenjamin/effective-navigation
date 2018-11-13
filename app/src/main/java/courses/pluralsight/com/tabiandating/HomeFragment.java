@@ -41,7 +41,7 @@ public class HomeFragment extends Fragment {
         }
         mStaggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayout.VERTICAL);
         mRecyclerView.setLayoutManager(mStaggeredGridLayoutManager);
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(mUsers, getActivity());
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(mUsers, getContext());
         mRecyclerView.setAdapter(adapter);
     }
 

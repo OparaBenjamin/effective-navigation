@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     dialog.dismiss();
                 }
             });
-            alertDialog.setIcon(R.drawable.logo);
+            //alertDialog.setIcon(R.drawable.logo);
             alertDialog.setTitle(" ");
             alertDialog.create();
             alertDialog.show();
